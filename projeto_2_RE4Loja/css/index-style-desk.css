@@ -1,0 +1,29 @@
+body {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* header */
+.header-bg {
+    border-start-start-radius: 30px;
+}
+
+
+/* pricing */
+#pricing {
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pricing-card {
+    margin: 0 10px 0 10px;
+}
+
+
+/* footer */
+footer {
+    border-start-start-radius: 20px;
+}

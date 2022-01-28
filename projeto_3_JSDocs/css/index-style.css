@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #4d4e53;
+    line-height: 1.5;
+}
+
+
+/* header */
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 22%;
+    height: 100%;
+
+    border-right: solid rgb(150, 150, 150);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin: 30px auto 30px auto;
+}
+
+@media (max-width: 880px) {
+    header h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 610px) {
+    header h1 {
+        font-size: 15px;
+    }
+}
+
+header nav {
+    height: 88%;
+    overflow: auto;
+}
+
+
+header nav ul li {
+    width: 100%;
+    height: 20%;
+    border-top: rgb(97, 97, 97) solid 2px;
+    padding: 20px 0 20px 10%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* container */
+.container {
+    position: absolute;
+    margin: 20px 20px 20px 25%;
+}
+
+.container section {
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* lista normal */
+.container ul {
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+/* lista dentro de lista */
+.container ul ul {
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+.container li {
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+
+
+.container code {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+    background-color: #f7f7f7;
+}
+
+
+/* mobile */
+
+@media (max-width: 510px) {
+    header {
+        position: static;
+        width: 100%;
+        height: 250px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        position: static;
+        width: 96%;
+        margin: 40px auto 20px auto;
+    }
+}

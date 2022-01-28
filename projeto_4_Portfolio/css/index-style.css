@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body end */
+
+
+
+
+header {
+    position: fixed;
+    z-index: 2;
+
+    width: 100%;
+
+
+
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+header nav ul{
+    display: flex;
+    justify-content: right;
+}
+
+header nav ul li {
+    padding: 20px;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media (max-width: 475px) {
+    header {
+        opacity: 0.7;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    header nav ul li a {
+        font-size: 18px;
+    }
+}
+
+/* header end */
+
+
+
+#sobre {
+    background-image: url("../img/JOB-DESTAQUE.jpg");
+    /*-webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0));*/
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: center;
+
+
+    height: 530px;
+}
+
+#sobre div {
+    text-align: center;
+    width: 50%;
+    padding: 5%;
+    padding-top: 80px;
+}
+
+@media (max-width: 720px) {
+    #sobre div {
+        width: 100%;
+    }
+}
+
+#sobre div h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#sobre div h2 {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+#sobre div p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+/* sobre end */
+
+
+
+
+#trabalhos h3 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
+
+.trabalhos-grade {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trabalhos-grade div {
+    width: 420px;
+    height: 250px;
+
+    max-width: 430px;
+
+    border-radius: 10px;
+    margin: 10px;
+
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.trabalhos-grade a {
+    text-decoration: none;
+    color: white;
+}
+
+.trabalhos-grade a img {
+    width: 100%;
+    height: 85%;
+
+    border-radius: 10px;
+}
+
+.trabalhos-grade a p {
+    padding: 6px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.trabalhos-grade a p span {
+    display: none;
+    color: greenyellow;
+}
+
+.trabalhos-grade a p:hover span {
+    display: initial;
+}
+/* trabalhos end */
+
+
+
+
+#contato {
+    height: 200px;
+
+    margin-top: 100px;
+
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#contato .contats-list {
+    display: flex;
+}
+
+#contato .contats-list .contats-item {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+
+#contato .contats-list .contats-item img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+#contato .contats-list .contats-item h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contato .contats-list .contats-item h4 a {
+    text-decoration: none;
+    color: inherit;
+}
+/* contato end */
+
+
+
+@media (min-width: 1367px) {
+    body {
+        width: 1366px;
+        margin: 0 auto;
+    }
+
+    header {
+        width: inherit;
+    }
+}
